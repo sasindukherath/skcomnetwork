@@ -39,7 +39,7 @@ function Sidebar() {
     <div className="sidebar">
          
             <div className="sidebar__top">
-                <h3>SK Cord LOGO</h3>
+                <h3>Sasindu K. Network</h3>
                 <ExpandMoreIcon/>
             </div>
 
