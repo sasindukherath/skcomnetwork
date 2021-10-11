@@ -47,7 +47,7 @@ function Sidebar() {
                 <div className="sidebar__channelsHeader">
                     <div className="sidebar__header">
                         <ExpandMoreIcon />
-                        <h4>Text Channels</h4>
+                        <h4>Channels</h4>
                     </div>
 
                     <AddIcon onClick={handelAddChannel} className="sidebar__addChannel"/>
