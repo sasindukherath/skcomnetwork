@@ -82,3 +82,9 @@
 .sidebar__profileIcons > .MuiSvgIcon-root {
     padding: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .sidebar{
+      display: none;
+  }
+}

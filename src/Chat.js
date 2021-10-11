@@ -8,6 +8,8 @@ import { selectUser } from './features/userSlice';
 import { selectChnnelId, selectChnnelName} from './features/appSlice';
 import db from "./firebase";
 import firebase  from 'firebase';
+import SendIcon from '@mui/icons-material/Send';
+
 function Chat() {
     const user = useSelector(selectUser);
     const channelId = useSelector(selectChnnelId);
@@ -64,12 +66,12 @@ function Chat() {
                     onChange={(e) => setInput(e.target.value)} 
                     placeholder={`Message for #${channelName}`}/>
                     
-                    <button 
-                    onClick={sendMessage}
-                    disabled={!channelId}
-                    className="chat__inputButton" 
-                    type="submit">
-                        Send Message
+                    <button
+                        onClick={sendMessage}
+                        disabled={!channelId}
+                        className="chat__inputButton"
+                        type="submit">
+                        
                     </button>
                 </form>
             </div>

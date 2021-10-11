@@ -3,7 +3,9 @@
     justify-content: space-between;
     align-items: center;
     color: gray;
-    padding: 10px;
+    border-bottom: 3px solid #00191D;
+    background-color: #082023;
+    padding: 4.5px;
 }
 
 .chatHeader__hash{
@@ -22,7 +24,7 @@
 .chatHeader__right{
     display: flex;
     align-items: center;
-    flex: 0.5;
+    flex: 0.2;
     justify-content: space-between;
 }
 
@@ -41,12 +43,23 @@
     color: gray;
     border-radius: 3px;
     padding: 3px;
+    
     background-color: #072024;
+    
+    
 }
 
-.chatHeader__search > input {
+.chatHeader__search  {
     background: transparent;
     outline-width: 0;
-    color: #fff;
+    color:gray;
     border: none;
+    cursor: pointer;
+}
+.chatHeader__search:hover{
+    color: white;
+}
+
+.name{
+    margin: 20px;
 }

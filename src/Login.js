@@ -3,6 +3,8 @@ import './Login.css';
 import logo from './pxArt.png';
 import {Button} from "@material-ui/core";
 import { auth, provider } from "./firebase";
+import NavBar from './componot/NavBar';
+import GoogleIcon from '@mui/icons-material/Google';
 
 
 
@@ -13,11 +15,13 @@ function login() {
     };
     return (
         <div className="login">
+            <NavBar />
             <div className="login__logo">
                 <img src={logo} alt="SKCN-logo" />
             </div>
 
-            <Button onClick={signIn}>Sign In</Button>
+            <h1>Welcome to S.Net</h1>
+            <Button onClick={signIn}><GoogleIcon/> <snap className="sign-in-text">sign in</snap></Button>
         </div>
 
 
