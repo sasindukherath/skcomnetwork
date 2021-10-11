@@ -16,10 +16,7 @@ function ChatHeader({channelName}) {
                 
             </div>
             <div className="chatHeader__right">
-                <NotificationIcon />
                 <div className="chatHeader__search">
-                    <input placeholder="Seach" />
-                    <SearchIcon />
                 </div>
             </div>
         </div>
