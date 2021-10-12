@@ -23,6 +23,7 @@ function Chat() {
                 .doc(channelId)
                 .collection("messages")
                 .orderBy('timestamp', "desc")
+                .limit(26)
                 .onSnapshot((snapshot) =>
                     setMessage(snapshot.docs.map((doc) => doc.data()))
                 );
