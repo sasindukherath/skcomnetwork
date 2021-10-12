@@ -21,7 +21,7 @@ function SidebarChannel({ id, channelName}) {
         
         >
         <h4>
-            <span className="sidebarChannel__hash">#</span>{channelName}
+            <span className="sidebarChannel__hash">📺</span>{channelName}
         </h4>
     </div>)
     

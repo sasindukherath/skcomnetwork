@@ -6,6 +6,8 @@ import { Avatar } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
 import LogoutIcon from '@mui/icons-material/Logout';
+import db, { auth } from './firebase';
+
 function ChatHeader({channelName}) {
     const user = useSelector(selectUser);
     return (
@@ -13,16 +15,13 @@ function ChatHeader({channelName}) {
             
             <div className="chatHeader__left">
                 <h3>
-                    <span className="chatHeader__hash">#</span>
+                    <span className="chatHeader__hash">📺</span>
                     {channelName}
                 </h3>
-
-               
-                
             </div>
             <div className="chatHeader__right">
-                <div className="chatHeader__search">
-                    <LogoutIcon/> Logout
+                <div onClick={() => auth.signOut()} className="chatHeader__search">
+                    <LogoutIcon /> Logout
                 </div>
                 <div className="name">
                     
